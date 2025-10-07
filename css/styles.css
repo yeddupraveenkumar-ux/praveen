@@ -3782,9 +3782,10 @@ textarea.form-control-lg {
   --bs-nav-link-padding-x: 0;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: var(--bs-navbar-color);
-  --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+  --bs-nav-link-color: rgb(255 197 22);
+  --bs-nav-link-hover-color: rgb(255, 255, 255);
   --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -8321,7 +8322,7 @@ textarea.form-control-lg {
 
 .bg-white {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgb(1 52 96) !important;
 }
 
 .bg-body {
@@ -11731,4 +11732,35 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
+}
+
+.fonttext{
+  font-style: var(--bs-accordion-active-bg);
+}
+
+
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+div.gallery-item:hover {
+  border: 1px solid #777;
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
 }
